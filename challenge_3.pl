@@ -1,4 +1,4 @@
-# 6x6 sudoku
+%! 6x6 sudoku
 
 sudoku6(Puzzle, Solution) :-
   Solution = Puzzle,
@@ -47,7 +47,7 @@ pretty_print([Head | Tail]) :-
  print('\n'),
  pretty_print(Tail).
 
- # 9x9 sudoku
+%! 9x9 sudoku
 
  sudoku(Puzzle, Solution) :-
   length(Puzzle, L),

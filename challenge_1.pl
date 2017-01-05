@@ -1,4 +1,4 @@
-# find all books by author: wrote(What, rand).
+%! find all books by author: wrote(What, rand).
 
 wrote(fountain_head, rand).
 wrote(atlas_shrugged, rand).
