@@ -1,15 +1,12 @@
-# reverse
+%! reverse
 reverse_list([],[]).
 reverse_list([Head|Tail], Reverse):-  naiverev(Tail,RevT),  append(RevT,[Head],Reverse).
 
-# sort
-# I realize this is cheating a little but life is hard
-naive_sort(List,Sorted):-perm(List,Sorted),is_sorted(Sorted).
-is_sorted([]).
-is_sorted)[_]).
-is_sorted([X,Y|T]):-X=<Y,is_sorted([Y|T]).
+%! sort
+sorted([], []).
+sorted([Head|Tail], Sort) :- sorted(Tail, Remainder), insort(Head, Remainder, Sort).
 
-# find smallest number in list
+%! find smallest number in list
 list_min([L|Ls], Min) :-
     list_min(Ls, L, Min).
 
