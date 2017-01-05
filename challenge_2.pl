@@ -1,6 +1,6 @@
 # reverse
 reverse_list([],[]).
-reverse_list([Head|Tail], Rerverse):-  naiverev(Tail; ,RevT),  append(RevT,[Head],Rerverse).
+reverse_list([Head|Tail], Reverse):-  naiverev(Tail,RevT),  append(RevT,[Head],Reverse).
 
 # sort
 # I realize this is cheating a little but life is hard
